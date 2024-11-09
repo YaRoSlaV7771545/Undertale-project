@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+}
+header > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:600px;
+	height:200px;
+}
+li{
+	width:60px;
+	height:60px;
+	font-size:30px;
+	font-family:Comic Sans MS;
+	color: white;
+}
+nav{
+	float: left;
+	color: white;
+	position: fixed;
+	left: 0px;
+	height: 100%;
+}
+body{
+	background-color: black;
+}
+article{
+	color: white;
+	font-family:Comic Sans MS;
+}
