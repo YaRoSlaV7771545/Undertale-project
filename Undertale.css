@@ -31,8 +31,14 @@ article{
 	font-family:Comic Sans MS;
 }
 @media only screen and (max-width: 768px) {
-
+	top: 0px;
+	position: fixed;
 }
-img{
-	width=
+#fl {
+	width: 143px;
+	height: 175px;
+}
+#sa {
+	width:250px;
+	height:175px;
 }
