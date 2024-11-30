@@ -14,7 +14,7 @@ li{
 	height:60px;
 	font-size:30px;
 	font-family:Comic Sans MS;
-	color: white;
+	color: rgb(119, 0, 255);
 }
 nav{
 	float: left;
@@ -30,10 +30,6 @@ article{
 	color: white;
 	font-family:Comic Sans MS;
 }
-@media only screen and (max-width: 768px) {
-	top: 0px;
-	position: fixed;
-}
 #fl {
 	width: 143px;
 	height: 175px;
@@ -41,4 +37,56 @@ article{
 #sa {
 	width:250px;
 	height:175px;
+}
+.di{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	animation: souls 2s infinite ease-in-out;
+}
+
+#eha {
+	position: absolute;
+	top: 51px;
+
+}
+
+#ema {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	height: 1000px;
+	rotate: 30deg;
+}
+
+@keyframes souls{
+	0% {
+		transform: scale(1) rotate(-20deg);
+	}
+	50% {
+		transform: scale(2) rotate(40deg);
+	}
+	100% {
+		transform: scale(1) rotate(-20deg);
+	}
+}
+span{
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	animation: souls 2s infinite ease-in-out;
+}
+span > img{
+	height:100px;
+	width:100px;
+}
+@media only screen 
+				and (min-device-width: 240px)
+				and (max-device-width: 480px)
+{
+
+
+
 }
