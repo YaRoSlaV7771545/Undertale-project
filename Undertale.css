@@ -94,22 +94,22 @@ span > img{
 	align-items: center;
     justify-content: center;
 	color: white;
-	animation: gaster 5s infinite ease-in-out;
-	text-shadow: 10px 10px 10px white;;
+	animation: gaster 0.001s infinite ease-in-out;
+	text-shadow: 10px 10px 10px white;
 }
 
 @keyframes gaster{
-	0%{transform: scale(1.05) rotate(1deg);}
-	10%{transform: scale(1.07) rotate(3deg);}
-	20%{transform: scale(1.09) rotate(1deg);}
-	30%{transform: scale(1.07) rotate(3deg);}
-	40%{transform: scale(1.05) rotate(1deg);}
-	50%{transform: scale(1.03) rotate(3deg);}
-	60%{transform: scale(1.12) rotate(1deg);}
-	70%{transform: scale(1.05) rotate(3deg);}
-	80%{transform: scale(1.03) rotate(1deg);}
-	90%{transform: scale(1.05) rotate(3deg);}
-	100%{transform: scale(1.19) rotate(0deg);}
+	0%{transform: scale(5.05) rotate(-3deg);}
+	10%{transform: scale(10.17) rotate(3deg);}
+	20%{transform: scale(8.19) rotate(-7deg);}
+	30%{transform: scale(7.17) rotate(9deg);}
+	40%{transform: scale(15.05) rotate(-3deg);}
+	50%{transform: scale(700.03) rotate(6deg);}
+	60%{transform: scale(15.12) rotate(-3deg);}
+	70%{transform: scale(10.05) rotate(3deg);}
+	80%{transform: scale(8.03) rotate(-3deg);}
+	90%{transform: scale(6.05) rotate(3deg);}
+	100%{transform: scale(6.03) rotate(1deg);}
 }
 @media only screen 
 				and (min-device-width: 240px)
