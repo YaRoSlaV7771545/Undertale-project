@@ -9,6 +9,15 @@ header > img {
 	width:600px;
 	height:200px;
 }
+
+
+
+a, a:active, a:visited, a:focus {
+	text-decoration: none;
+	color: white;
+	border:1px dashed rgb(111, 0, 255);
+}
+
 li{
 	width:60px;
 	height:60px;
@@ -85,7 +94,15 @@ span > img{
 #aee{
 	float:right;
 }
-
+footer{
+	float:right;
+	font-size: 30px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: blueviolet;
+}
 #shaking {
 	position: fixed;
 	height: 100%;
@@ -95,8 +112,9 @@ span > img{
     justify-content: center;
 	color: white;
 	animation: gaster 0.001s infinite ease-in-out;
-	text-shadow: 10px 10px 10px white;
 }
+
+
 
 @keyframes gaster{
 	0%{transform: scale(5.05) rotate(-3deg);}
@@ -104,18 +122,128 @@ span > img{
 	20%{transform: scale(8.19) rotate(-7deg);}
 	30%{transform: scale(7.17) rotate(9deg);}
 	40%{transform: scale(15.05) rotate(-3deg);}
-	50%{transform: scale(700.03) rotate(6deg);}
+	50%{transform: scale(15.03) rotate(6deg);}
 	60%{transform: scale(15.12) rotate(-3deg);}
 	70%{transform: scale(10.05) rotate(3deg);}
 	80%{transform: scale(8.03) rotate(-3deg);}
 	90%{transform: scale(6.05) rotate(3deg);}
 	100%{transform: scale(6.03) rotate(1deg);}
 }
-@media only screen 
-				and (min-device-width: 240px)
-				and (max-device-width: 480px)
-{
+@media (width <= 700px){
+	li {
+	font-size: 30px;
+	width: 40px;
+	height: 40px;
+	color: rgb(111, 0, 255);
+	}
+	*{
+		margin: 0%;
+		padding: 0%;
+	}
+	body {
+		background-color: black;
+	}
+	header > img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:300px;
+		height:100px;
+	}
+	nav{
+		float: left;
+		color: rgb(111, 0, 255);
+		position: fixed;
+		left: 0px;
+		height: 100%;
+	}
+	article {
+		color: rgb(255, 255, 255);
+		font-family: Comic Sans MC;
+	}
+	a:active, a:focus, a:visited {
+		text-decoration: none;
+		color: rgb(119, 0, 255);
+	}
+	#fl {
+		width: 71px;
+		height: 87px;
+	}
+	#sa {
+		width:125px;
+		height:87px;
+	}
+	.di{
+		height: 25px;
+		width: 25px;
+		position: relative;
+		animation: souls 2s infinite ease-in-out;
+	}
 
+	#eha {
+		position: absolute;
+		top: 25px;
 
+	}
 
+	#ema {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		height: 1000px;
+		rotate: 30deg;
+	}
+
+	@keyframes souls{
+		0% {
+			transform: scale(1) rotate(-20deg);
+		}
+		50% {
+			transform: scale(2) rotate(40deg);
+		}
+		100% {
+			transform: scale(1) rotate(-20deg);
+		}
+	}
+	span{
+		height: 25px;
+		width: 25px;
+		position: fixed;
+		top: 50px;
+		left: 50px;
+		animation: souls 2s infinite ease-in-out;
+	}
+	span > img{
+		height:50px;
+		width:50px;
+	}
+	#aee{
+		float:right;
+	}
+
+	#shaking {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		animation: gaster2 0.001s infinite ease-in-out;
+		font-size: 7.5px;
+	}
+
+	@keyframes gaster2{
+		0%{transform: scale(1.05) rotate(-3deg);}
+		10%{transform: scale(2.17) rotate(3deg);}
+		20%{transform: scale(2.19) rotate(-7deg);}
+		30%{transform: scale(1.17) rotate(9deg);}
+		40%{transform: scale(3.05) rotate(-3deg);}
+		50%{transform: scale(3.03) rotate(6deg);}
+		60%{transform: scale(3.12) rotate(-3deg);}
+		70%{transform: scale(2.05) rotate(3deg);}
+		80%{transform: scale(1.43) rotate(-3deg);}
+		90%{transform: scale(1.05) rotate(3deg);}
+		100%{transform: scale(1.03) rotate(1deg);}
+	}
 }
